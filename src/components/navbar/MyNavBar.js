@@ -1,72 +1,67 @@
 import React from "react";
-import logo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faSearch,
+  faPaw,
   faShoppingCart,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-const MyNavBar = () => {
+function MyNavBar () {
   return (
-    <div className="fixed top-0 left-0 w-full flex justify-center z-10 mt-5">
-      <div className="flex items-center pl-4 pr-4 mt-3 shadow-md rounded-full space-x-6 max-w-5xl mx-auto">
-        <div className="flex items-center space-x-2">
-          <img src={logo} alt="logo" className="h-12 w-auto" />
+    <div className="fixed z-10 mt-5 w-full">
+      <div
+        className="flex items-center px-12 py-4 shadow-md bg-white rounded-full space-x-14 mx-auto"
+        style={{ width: "fit-content" }}
+      >
+        <div>
+          <FontAwesomeIcon icon={faPaw}></FontAwesomeIcon>
+          <span className="font-bold ml-2">Pet Shop</span>
         </div>
-        <ul className="flex text-sm font-semibold gap-7">
-          <li>
-            <a
-              href="Início"
-              className="text-black hover:text-meuAzul border-b-2 border-transparent hover:border-meuAzul pb-1 duration-300"
-            >
-              Início
-            </a>
-          </li>
-          <li>
-            <a
-              href="Loja"
-              className="text-black hover:text-meuAzul border-b-2 border-transparent hover:border-meuAzul pb-1 duration-300"
-            >
-              Loja
-            </a>
-          </li>
-          <li>
-            <a
-              href="Sobre"
-              className="text-black hover:text-meuAzul border-b-2 border-transparent hover:border-meuAzul pb-1 duration-300"
-            >
-              Sobre nós
-            </a>
-          </li>
-          <li>
-            <a
-              href="Agendamento"
-              className="text-black hover:text-meuAzul border-b-2 border-transparent hover:border-meuAzul pb-1 duration-300"
-            >
-              Agendamento
-            </a>
-          </li>
-        </ul>
-        <div className="flex-grow flex items-center bg-neutral-100 rounded-full px-4 py-1">
-          <input
-            type="text"
-            placeholder="Buscar produtos"
-            className="bg-transparent outline-none text-sm text-black w-full"
-          />
-          <button className="text-gray-600 hover:text-black">
-            <FontAwesomeIcon icon={faSearch} />
-          </button>
-        </div>
-        <div className="flex items-center space-x-5">
-          <FontAwesomeIcon
-            icon={faUser}
-            className="text-black cursor-pointer"
-          />
+        <nav>
+          <ul className="flex gap-8">
+            <li>
+              <a
+                href="Início"
+                className="hover:text-meuAzul border-b-2 border-transparent hover:border-meuAzul pb-1 duration-300 font-semibold"
+              >
+                Início
+              </a>
+            </li>
+            <li>
+              <a
+                href="Loja"
+                className="hover:text-meuAzul border-b-2 border-transparent hover:border-meuAzul pb-1 duration-300 font-semibold"
+              >
+                Loja
+              </a>
+            </li>
+            <li>
+              <a
+                href="Sobre"
+                className="hover:text-meuAzul border-b-2 border-transparent hover:border-meuAzul pb-1 duration-300 font-semibold"
+              >
+                Sobre nós
+              </a>
+            </li>
+            <li>
+              <a
+                href="Agendamento"
+                className="hover:text-meuAzul border-b-2 border-transparent hover:border-meuAzul pb-1 duration-300 font-semibold"
+              >
+                Agendamento
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div className="flex gap-8">
           <FontAwesomeIcon
             icon={faShoppingCart}
-            className="text-black cursor-pointer"
-          />
+            className="cursor-pointer"
+          ></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faUser}
+            className="cursor-pointer"
+          ></FontAwesomeIcon>
         </div>
       </div>
     </div>

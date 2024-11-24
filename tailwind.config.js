@@ -9,7 +9,8 @@ module.exports = {
       colors: {
         'meuAzul': '#007BFF',
         'meuBackground': '#F8F9FA',
-      }
+        'meuPreto': '#090706',
+      },
     },
   },
   plugins: [],
