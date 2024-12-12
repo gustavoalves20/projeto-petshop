@@ -9,8 +9,7 @@ import {
 import { faPaw } from "@fortawesome/free-solid-svg-icons";
 import footerImage from "../../assets/images/footer/footerImage.PNG";
 
-
-function MeuFooter() {
+function MyFooter() {
   return (
     <footer
       style={{
@@ -18,20 +17,20 @@ function MeuFooter() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className="h-96 mt-16 flex justify-center items-center"
+      className="h-auto mt-16 flex justify-center items-center py-12 px-6"
     >
-      <div className="flex gap-20">
-        <div className="flex flex-col gap-2">
-          <div className="flex items-center gap-2">
+      <div className="flex flex-wrap justify-center gap-12 max-w-5xl">
+        <div className="flex flex-col gap-4 text-center md:text-left">
+          <div className="flex justify-center md:justify-start items-center gap-2">
             <FontAwesomeIcon icon={faPaw} />
             <h2 className="font-bold">Pet Shop</h2>
           </div>
           <p>
             O melhor Pet Shop da região com os
-            <br /> profissionais mais qualificados. Seu sorriso
-            <br /> é nossa maior recompensa
+            <br/> profissionais mais qualificados. Seu sorriso
+            <br/> é nossa maior recompensa
           </p>
-          <div className="flex gap-4 mt-4">
+          <div className="flex justify-center md:justify-start gap-4 mt-4">
             <FontAwesomeIcon
               icon={faFacebook}
               className="text-xl cursor-pointer"
@@ -54,7 +53,7 @@ function MeuFooter() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 text-center md:text-left">
           <h2 className="font-bold">Empresa</h2>
           <p className="cursor-pointer">Sobre</p>
           <p className="cursor-pointer">Serviços</p>
@@ -62,7 +61,7 @@ function MeuFooter() {
           <p className="cursor-pointer">Equipe</p>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 text-center md:text-left">
           <h2 className="font-bold">Links</h2>
           <p className="cursor-pointer">Novidades</p>
           <p className="cursor-pointer">Vendas</p>
@@ -70,7 +69,7 @@ function MeuFooter() {
           <p className="cursor-pointer">Perguntas</p>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 text-center md:text-left">
           <h2 className="font-bold">SAC</h2>
           <p className="cursor-pointer">Contate-nos</p>
           <p className="cursor-pointer">Envio</p>
@@ -78,7 +77,7 @@ function MeuFooter() {
           <p className="cursor-pointer">Pedidos</p>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 text-center md:text-left">
           <h2 className="font-bold">Loja</h2>
           <p className="cursor-pointer">
             Rua Sebastião
@@ -92,4 +91,4 @@ function MeuFooter() {
   );
 }
 
-export default MeuFooter;
+export default MyFooter;
